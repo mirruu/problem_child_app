@@ -1,0 +1,9 @@
+<h1>Mistakes</h1>
+
+<ul>
+<% @mistakes.each do |mistake| %>
+  <li>
+	<a href = "http://localhost:3000/mistakes/<%= mistake.id %>">
+	<%= mistake.severity %> <%= mistake.name %> </li>
+<% end %>
+</ul>
